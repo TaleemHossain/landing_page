@@ -1,0 +1,23 @@
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+.links div a{
+    text-decoration: none;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+}
