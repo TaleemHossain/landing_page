@@ -21,9 +21,9 @@ body {
 }
 
 .header .logo {
-    font-size: 32px;
-    font-weight: 1000;
-    text-decoration: solid;
+    font-size: 24px;
+    font-weight: 700;
+    color: #f9faf8;
 }
 
 .header .links {
@@ -31,18 +31,65 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-
 }
 
 .header .links a {
-    color: white;
+    font-size: 18px;
+    color: #e5e7eb;
     text-decoration: none;
 }
 
 .intro {
     display: flex;
     justify-content: center;
-    background-color: orange;
+    gap: 64px;
+
+    padding: 64px 128px;
+    padding-bottom: 128px;
+
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+    background-color: #1F2937;
+}
+
+.intro .text{
+    padding: 8px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+.intro .image img {
+    height: 300px;
+}
+
+.text .tagline{
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+.text .subtext{
+    font-size: 18px;
+    text-align: justify;
+}
+
+.text button {
+    padding: 8px 24px;
+
+    background-color: #3882f6;
+    color: #f9faf8;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    border: none;
+    border-radius: 12px;
+
+    cursor: pointer;
 }
 
 .info {
