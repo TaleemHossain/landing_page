@@ -10,12 +10,14 @@ body {
     flex-direction: column;
 }
 
+.header, .intro, .info, .quote, .sign-up, .footer {
+    padding: 48px 256px;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
-    padding: 32px 128px;
 
     color: white;
 
@@ -44,11 +46,10 @@ body {
 
 .intro {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 128px;
+    gap: 24px;
 
-    padding: 64px 128px;
     padding-bottom: 128px;
 
     color: white;
@@ -56,9 +57,16 @@ body {
     background-color: #1F2937;
 }
 
-.intro .text{
+.intro .non-image{
     flex: 1;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 42px;
+}
+
+.intro .non-image .text {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -68,24 +76,27 @@ body {
 .intro .image {
     flex: 1;
     min-width: 350px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .intro .image img {
     max-width: 100%;
+    height: auto;
 }
 
-.intro .text .tagline{
+.intro .non-image .text .tagline{
     font-size: 48px;
     font-weight: 900;
     color: #f9faf8;
 }
 
-.intro .text .subtext{
+.intro .non-image .text .subtext{
     font-size: 18px;
     text-align: justify;
 }
 
-.intro .text button {
+.intro .non-image .button button {
     padding: 8px 24px;
 
     background-color: #3882f6;
@@ -104,8 +115,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 64px;
-
-    padding: 128px;
 }
 
 .info .title {
@@ -148,8 +157,6 @@ body {
 }
 
 .quote {
-    padding: 64px 128px;
-
     display: flex;
     flex-direction: column;
 
@@ -179,12 +186,56 @@ body {
 }
 
 .sign-up {
-    background-color: lightblue;
+    background-color: #f9faf8;
 }
 
-.window {
+.sign-up .window {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    background-color: #3882f6;
+    border-radius: 12px;
+    padding: 60px 128px;
+}
+
+.sign-up .window .text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    color: #f9faf8;
+}
+
+.sign-up .window .text .tagline{
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.sign-up .window .text .subtext{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.sign-up .window .button {
+    display: flex;
+    align-items: center;
+}
+
+.sign-up .window .button button{
+    padding: 8px 40px;
+
+    background-color: #3882f6;
+    color: #f9faf8;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    border: 2px solid #f9faf8;
+    border-radius: 12px;
+
+    cursor: pointer;
 }
 
 .footer {
@@ -192,8 +243,6 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #1f2937;
-
-    padding: 36px 128px;
 
     font-size: 18px;
     color: #e5e7eb;
