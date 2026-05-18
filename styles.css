@@ -1,6 +1,8 @@
 body {
     margin: 0px;
     padding: 0px;
+
+    font-family: 'Roboto', sans-serif;
 }
 
 .main {
@@ -11,10 +13,10 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     padding: 32px 128px;
 
-    font-family: 'Roboto', sans-serif;
     color: white;
 
     background-color: #1F2937;
@@ -30,6 +32,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -42,18 +45,20 @@ body {
 .intro {
     display: flex;
     justify-content: center;
-    gap: 64px;
+    flex-wrap: wrap;
+    gap: 128px;
 
     padding: 64px 128px;
     padding-bottom: 128px;
 
-    font-family: 'Roboto', sans-serif;
     color: white;
 
     background-color: #1F2937;
 }
 
 .intro .text{
+    flex: 1;
+
     padding: 8px;
 
     display: flex;
@@ -62,22 +67,27 @@ body {
     gap: 12px;
 }
 
-.intro .image img {
-    height: 300px;
+.intro .image {
+    flex: 1;
+    min-width: 350px;
 }
 
-.text .tagline{
+.intro .image img {
+    max-width: 100%;
+}
+
+.intro .text .tagline{
     font-size: 48px;
     font-weight: 900;
     color: #f9faf8;
 }
 
-.text .subtext{
+.intro .text .subtext{
     font-size: 18px;
     text-align: justify;
 }
 
-.text button {
+.intro .text button {
     padding: 8px 24px;
 
     background-color: #3882f6;
@@ -95,11 +105,48 @@ body {
 .info {
     display: flex;
     flex-direction: column;
-    background-color: yellow;
+    gap: 64px;
+
+    padding: 64px 128px;
 }
 
-.tabs {
+.info .title {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+
     display: flex;
+    justify-content: center;
+}
+
+.info .tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.info .tab {
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    text-align: center;
+}
+
+.info .tabs .tab img{
+    max-width: 100%;
+    height: auto;
+
+    border: 3px solid #3882f6;
+    border-radius: 12px;
+}
+
+.info .tabs .tab .text{
+    font-size: 18px;
+    color: #1f2937;
 }
 
 .quote {
